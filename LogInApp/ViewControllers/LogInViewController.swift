@@ -16,16 +16,20 @@ class LogInViewController: UIViewController {
     @IBOutlet var forgotUserNameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
     
-    private let userName = "Nikolay"
-    private let password = "12345"
+    private let userName = User.getUser()
+    
+    private let password = User.getUser()
+    
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let logOutVC = segue.destination as! LogOutViewController
-        logOutVC.user = userName
+        logOutVC.user = userName.user
     }
     
     @IBAction func logInButtonPressed() {
-        if userNameTF.text != userName || passwordTF.text != password {
+        if userNameTF.text != userName.user || passwordTF.text != password.password {
             showAlert(
                 title: "Wrong user name or password!",
                 message: "Please, try again.",
@@ -35,9 +39,9 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         if sender.tag == 0 {
-            showAlert(title: "Oops!", message: "Your user name is \(userName)😉")
+            showAlert(title: "Oops!", message: "Your user name is \(userName.user)😉")
         } else {
-            showAlert(title: "Oops!", message: "Your password is \(password)😉")
+            showAlert(title: "Oops!", message: "Your password is \(password.password)😉")
         }
     }
     
