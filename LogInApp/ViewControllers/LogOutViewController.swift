@@ -12,10 +12,10 @@ class LogOutViewController: UIViewController {
     @IBOutlet var welcomeTF: UITextField!
     @IBOutlet var logOutButton: UIButton!
     
-    var user = ""
+    var userTF: User!
     
     override func viewDidLoad() {
-        welcomeTF.text = "Welkome, \(user)!"
+        welcomeTF.text = "Welkome, \(userTF.user)!"
     }
  
 }

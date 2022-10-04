@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6066D90C28EC5EB900122792 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6066D90B28EC5EB900122792 /* MoreInfoViewController.swift */; };
 		60975C4C28E9D7F300241829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60975C4B28E9D7F300241829 /* AppDelegate.swift */; };
 		60975C4E28E9D7F300241829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60975C4D28E9D7F300241829 /* SceneDelegate.swift */; };
 		60975C5028E9D7F300241829 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60975C4F28E9D7F300241829 /* LogInViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6066D90B28EC5EB900122792 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		60975C4828E9D7F300241829 /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60975C4B28E9D7F300241829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60975C4D28E9D7F300241829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				60975C4F28E9D7F300241829 /* LogInViewController.swift */,
 				60975C5F28EA9E2B00241829 /* LogOutViewController.swift */,
+				6066D90B28EC5EB900122792 /* MoreInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				60A6DB8D28EC4064004CDF08 /* File.swift in Sources */,
 				60975C5028E9D7F300241829 /* LogInViewController.swift in Sources */,
 				60975C4C28E9D7F300241829 /* AppDelegate.swift in Sources */,
+				6066D90C28EC5EB900122792 /* MoreInfoViewController.swift in Sources */,
 				60975C6028EA9E2B00241829 /* LogOutViewController.swift in Sources */,
 				60975C4E28E9D7F300241829 /* SceneDelegate.swift in Sources */,
 			);
