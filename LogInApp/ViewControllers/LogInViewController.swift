@@ -22,12 +22,18 @@ class LogInViewController: UIViewController {
         guard let tabBarController = segue.destination as? UITabBarController else {return}
         guard let tabBarControllers = tabBarController.viewControllers else {return}
         
-        for _ in tabBarControllers {
-            if let logOutVC = segue.destination as? LogOutViewController {
-                logOutVC.userTF = user
-            } else if let navigationVC = segue.destination as? UINavigationController{
-                let infoVC = navigationVC.topViewController as! MoreInfoViewController
-                infoVC.info = user
+        for tabBarController in tabBarControllers {
+            
+            if let loginVC = tabBarController as? LogOutViewController {
+                loginVC.userTF = user
+            } else if let navigatinVC = tabBarController as? UINavigationController {
+                let infoVC = navigatinVC.topViewController as? MoreInfoViewController
+                infoVC?.info = user
+//            if let logOutVC = segue.destination as! LogOutViewController {
+//                logOutVC.userTF = user
+//            } else if let navigationVC = segue.destination as? UINavigationController{
+//                let infoVC = navigationVC.topViewController as! MoreInfoViewController
+//                infoVC.info = user
                 
             }
         }
