@@ -29,12 +29,6 @@ class LogInViewController: UIViewController {
             } else if let navigatinVC = tabBarController as? UINavigationController {
                 let infoVC = navigatinVC.topViewController as? MoreInfoViewController
                 infoVC?.info = user
-//            if let logOutVC = segue.destination as! LogOutViewController {
-//                logOutVC.userTF = user
-//            } else if let navigationVC = segue.destination as? UINavigationController{
-//                let infoVC = navigationVC.topViewController as! MoreInfoViewController
-//                infoVC.info = user
-                
             }
         }
     }
